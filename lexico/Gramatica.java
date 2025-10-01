@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package lexico;
+
+import java.util.ArrayList;
+import java.util.List;
+import modelos.ModeloGramatica;
+
+/**
+ *
+ * @author jesus
+ */
+public class Gramatica {
+    public Gramatica() {
+        gramatica = new ArrayList<>();
+        initGramatica();
+    }
+
+    private List<ModeloGramatica> gramatica;
+
+    public void initGramatica() {
+        gramatica.add(new ModeloGramatica(List.of("def", "print", "call"), "Palabra reservada"));
+        gramatica.add(new ModeloGramatica(List.of("(", ")", ":", "\""), "Simbolo"));
+        gramatica.add(new ModeloGramatica(List.of(";"), "Delimitador"));
+        gramatica.add(new ModeloGramatica(List.of("+", "-", "*", "/"), "Operador"));
+        gramatica.add(new ModeloGramatica(List.of("="), "Igual"));
+
+    }
+
+    public List<ModeloGramatica> GetGramatica() {
+        return gramatica;
+    }
+}
