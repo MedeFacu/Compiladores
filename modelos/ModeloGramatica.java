@@ -8,7 +8,8 @@ import java.util.List;
 
 /**
  *
- * @author jesus
+ * @author Michelle
+
  */
 public class ModeloGramatica {
     private List<String> valores;
@@ -35,3 +36,4 @@ public class ModeloGramatica {
         this.valores = valores;
     }
 }
+
