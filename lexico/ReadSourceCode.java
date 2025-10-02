@@ -11,7 +11,7 @@ import java.io.IOException;
 
 /**
  *
- * @author jesus
+ * @author Michelle
  */
 public class ReadSourceCode {
     public String ReadCode(String path) throws Exception {
@@ -34,3 +34,4 @@ public class ReadSourceCode {
         return code.split(" ");
     }
 }
+
