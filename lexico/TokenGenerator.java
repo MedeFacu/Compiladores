@@ -14,7 +14,7 @@ import regex.RegexPattern;
 
 /**
  *
- * @author jesus
+ * @author Michelle
  */
 public class TokenGenerator {
 
@@ -64,3 +64,4 @@ public class TokenGenerator {
         return tokens;
     }
 }
+
