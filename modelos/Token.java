@@ -6,7 +6,7 @@ package modelos;
 
 /**
  *
- * @author jesus
+ * @author Michelle
  */
 public class Token {
     private String Grupo;
@@ -67,3 +67,4 @@ public class Token {
                 '}';
     }
 }
+
