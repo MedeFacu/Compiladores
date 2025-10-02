@@ -6,7 +6,7 @@ package modelos;
 
 /**
  *
- * @author jesus
+ * @author Michelle
  */
 public class PatternRecord {
     private String tipo;
@@ -33,3 +33,4 @@ public class PatternRecord {
         this.regex = regex;
     }
 }
+
