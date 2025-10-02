@@ -10,7 +10,7 @@ import modelos.ModeloGramatica;
 
 /**
  *
- * @author jesus
+ * @author Michelle
  */
 public class Gramatica {
     public Gramatica() {
@@ -33,3 +33,4 @@ public class Gramatica {
         return gramatica;
     }
 }
+
