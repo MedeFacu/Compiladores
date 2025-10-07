@@ -21,16 +21,17 @@ public class Gramatica {
     private List<ModeloGramatica> gramatica;
 
     public void initGramatica() {
-        gramatica.add(new ModeloGramatica(List.of("def", "print", "call"), "Palabra reservada"));
-        gramatica.add(new ModeloGramatica(List.of("(", ")", ":", "\""), "Simbolo"));
-        gramatica.add(new ModeloGramatica(List.of(";"), "Delimitador"));
-        gramatica.add(new ModeloGramatica(List.of("+", "-", "*", "/"), "Operador"));
-        gramatica.add(new ModeloGramatica(List.of("="), "Igual"));
+       gramatica.add(new ModeloGramatica(List.of("int", "bool", "void", "if", "else", "while", "for", "return", "break", "continue", "true", "false"), "Palabra reservada"));
+       gramatica.add(new ModeloGramatica(List.of("[", "]", "(", ")", "{", "}", ","), "Simbolo"));
+       gramatica.add(new ModeloGramatica(List.of(";"), "Delimitador"));
+       gramatica.add(new ModeloGramatica(List.of("+", "-", "*", "/", "%", "==", "!=", "<", ">", "<=", ">=", "&&", "||", "!"), "Operador"));
+       gramatica.add(new ModeloGramatica(List.of("="), "Asignacion"));
 
     }
-
+    
     public List<ModeloGramatica> GetGramatica() {
         return gramatica;
     }
 }
+
 
